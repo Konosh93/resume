@@ -1,0 +1,171 @@
+%-------------------------
+% Resume in Latex
+% Author : Omer Ishag
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://sourabhbajaj.com/}{\Large Omer Ishag}} & Email: \href{mailto:omer.rayah@gmail.com}{omer.rayah@gmail.com}\\
+  \href{https://omertv.site/about}{https://omertv.site} & Mobile: +81-80-4866-4321 \\
+  \ & 4-4-16, Aobadai, Meguro, Tokyo, Japan \\
+\end{tabular*}
+
+%--------PROGRAMMING SKILLS------------
+ \resumeSubHeadingListStart
+   \item{
+     \textbf{Date of Birth}{: June 6, 1988}
+     \hfill
+     \textbf{Place of Birth}{: Khartoum, Sudan}
+     \hfill
+     \textbf{Nationality}{: Japanese}
+   }
+   \item{
+    \textbf{Languages}{: Arabic, English, Japanese.}
+  }
+ \resumeSubHeadingListEnd
+
+%--------PROGRAMMING SKILLS------------
+\section{Technical Skills}
+ \resumeSubHeadingListStart
+   \item{
+     \textbf{Languages}{: Typescript/JavaScript, Python. }
+   }
+ \resumeSubHeadingListEnd
+ \resumeSubHeadingListStart
+   \item{
+     \textbf{Technologies}{: REST, GraphQL, RDBMS, NoSQL databases, Linux, Git, Node.js, NPM, Yarn, React, React Native, SSR, iOS and Android apps deployment. }
+   }
+ \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {The University of Tokyo}{Tokyo, Japan}
+      {Master of Engineering in Systems Innovation}{Oct. 2012 -- Sep. 2014}
+    \resumeSubheading
+      {Khartoum University}{Khartoum, Sudan}
+      {Bachelor of Science and Engineering in Petroleum Engineering}{Sep. 2005 -- Sep. 2010}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Argano}{Shibuya, Tokyo}
+      {Software Engineer}{March 2018 - Present}
+      \resumeItemListStart
+        \resumeItem{Geolocation Service}
+          {I was a team member for this mobile application built for iOS and Android. It allows users to browse and post stories. User-generated content includes text, images, and geo-location data. My teammates and I contributed to all parts of the project. Technologies used include REST API, MySQL, Docker, Kubernetes, Elasticsearch, gRPC, Redis, and Firebase (Functions, Firestore).}
+        \resumeItem{Social Game}
+          {I used the Node.js cluster module to implement a task parallelization feature, which enabled processing players' scores and calculating their ranks quickly.}
+          \resumeItem{Ecommerce Application}
+          {I contributed to the customer-facing website code, as well as an admin site for managing customers and payments. Among the technologies used are WordPress, Hyperapp, Express.js, Stripe Payments, MySQL, Docker, and AWS.}
+        \resumeItem{Hotel Booking Management Application}
+          {I contributed to the frontend of the service using React.js and Next.js for SSR.}
+          \resumeItem{Browser Automation}
+          {I created a React application for this browser automation PoC version.}
+        \resumeItem{Browser Extension}
+          {I was the manager and the main contributor to this browser extension, which allows users to create customized reports from their analytics data. }
+          \resumeItem{Cloud Storage of Personal Data}
+          {I was a team member for this paid service, which provides storing information online in a secure way. I contributed to the frontend and backend, using technologies such as GraphQL, Typeorm, MySQL, S3, React, and Next.js. }
+        \resumeItem{Tourism Service}
+          {I contributed to this e-commerce site built on top of Shopify APIs, with technologies including, GraphQL and React.}
+        \resumeItem{PWA}
+          {I contributed to this progressive web app (PWA), built  with React and integrated with a serverless-backend architecture using Firebase Functions, Storage and Database, to handle data and light background processing.}
+          \resumeItem{GraphQL Codegen Documents}
+          {I co-authored this open-source plugin for GraphQL-Codegen. https://github.com/argano/graphql-codegen-documents. }
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {RCS Corporation}{Chiyoda, Tokyo}
+      {Assistant Language Teacher}{May 2015 - March 2018}
+      \resumeItemListStart
+          {I worked at primary schools in Chiyoda City, and collaborated with Japanese home-room teachers to improve the quality of English language classes.}
+      \resumeItemListEnd
+
+      \resumeSubheading
+      {Khartoum University}{Khartoum, Sudan}
+      {Teaching Assistant}{Sep. 2010 - Sep. 2011}
+      \resumeItemListStart
+        {I assisted professors with their instructional responsibilities. My tasks included tutoring, preparing tests, and other administrative work.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+
+%-------------------------------------------
+\end{document}
